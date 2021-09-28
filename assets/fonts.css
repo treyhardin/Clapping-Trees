@@ -1,5 +1,11 @@
 @font-face {
+    font-family: 'Coconat';
+    src: url(Coconat-BoldExt.otf);
+    font-weight: bold;
+  }
+
+  @font-face {
     font-family: 'Satoshi';
     src: url(Satoshi-Variable.ttf);
-    font-weight: bold;
+    font-weight: regular;
   }
