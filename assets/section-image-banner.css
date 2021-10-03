@@ -17,7 +17,6 @@
 
 @media screen and (min-width: 750px) {
   .banner {
-    min-height: 72rem;
     flex-direction: row;
   }
 }
@@ -152,7 +151,7 @@
     padding-top: 5rem;
   }
 
-  .banner__content--center {
+  .banner__content--middle {
     align-items: center;
   }
 
@@ -163,6 +162,17 @@
   .banner__content--flex-end {
     align-items: flex-end;
   }
+
+  .banner__content--left {
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .banner__content--center {
+    justify-content: center;
+    text-align: center;
+  }
+
 }
 
 .banner__box {
@@ -171,7 +181,6 @@
   position: relative;
   height: fit-content;
   align-items: center;
-  text-align: center;
   width: 100%;
 }
 
@@ -210,9 +219,17 @@
   display: flex;
   align-items: baseline;
   gap: 1rem;
-  justify-content: center;
   flex-wrap: wrap;
 }
+.banner__content--left > .banner__box > .banner__buttons {
+  justify-content: flex-start;
+}
+
+.banner__content--center > .banner__box > .banner__buttons {
+  justify-content: center;
+}
+
+
 
 .banner__box > * + .banner__buttons--multiple {
   display: flex;
@@ -264,7 +281,7 @@
   .banner__box {
     padding: 5rem;
     width: auto;
-    max-width: 51rem;
+    max-width: 700px;
   }
 
   .banner__box > .banner__buttons:only-child .button {

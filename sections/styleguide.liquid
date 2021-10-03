@@ -1,15 +1,31 @@
 <link rel="stylesheet" href="{{ 'section-main-page.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-rte.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'styleguide.css' | asset_url }}" media="print" onload="this.media='all'">
 
 <noscript>{{ 'section-main-page.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'styleguide.css' | asset_url | stylesheet_tag }}</noscript>
 
 <div class="page-width page-width--narrow">
-  <h1 class="main-page-title page-title h0">
+  {% comment %} <h1 class="main-page-title page-title">
     {{ page.title | escape }}
-  </h1>
-  <div class="rte">
-    {{ page.content }}
+  </h1> {% endcomment %}
+  <div class="styleguide-section rte">
+    <p class="h1">Heading 1</p>
+    <p class="h2">Heading 2</p>
+    <p class="h3">Heading 3</p>
+    <p class="h4">Heading 4</p>
+    <p class="h5">Heading 5</p>
+    <p class="h6">Heading 6</p>
+    <p>Body</p>
+    <p class="caption">Caption</p>
+    <p class="utility">Utility</p>
+    <blockquote>Blockquote</blockquote>
+  </div>
+  <div class="styleguide-section">
+    <span class="color-swatch background-ink">Ink</div>
+    <span class="color-swatch background-light">Light</div>
+    <span class="color-swatch background-reverse">Reverse</div>
   </div>
 </div>
 
