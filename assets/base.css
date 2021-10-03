@@ -1239,7 +1239,6 @@ deferred-media {
   --button-icon-size: 22px;
   padding: 0 calc(30px + var(--button-icon-size) + 10px) 0 30px;
   position: relative;
-  color: inherit;
 }
 
 .button.button-arrow::after {
