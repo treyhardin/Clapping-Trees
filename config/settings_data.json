@@ -16,7 +16,6 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "color_scheme": "background-1"
             }
           }
         },
