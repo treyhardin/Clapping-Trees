@@ -1857,7 +1857,8 @@ input[type='checkbox'] {
   position: relative;
 }
 
-.header {
+.header,
+.header.transparent-header {
   display: grid;
   grid-template-areas: 'nav logo utility';
   grid-template-columns: 1fr 1fr 1fr;
@@ -1871,7 +1872,7 @@ input[type='checkbox'] {
   transition: all var(--duration-default) ease-out;
 }
 
-.header.transparent-header {
+.header.transparent-header:not(:hover) {
   background: transparent;
   color: var(--color-light);
 }
@@ -1881,6 +1882,16 @@ input[type='checkbox'] {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: var(--space-m);
+  right: var(--space-m);
+  height: 1px;
+  background: var(--color-light);
 }
 
 .header__logo {

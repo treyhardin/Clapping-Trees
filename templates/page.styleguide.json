@@ -1,7 +1,11 @@
 {
+
+    "name": "Styleguide Template",
+    "wrapper": "section[data-scroll-section]",
     "sections": {
       "main": {
         "type": "styleguide",
+        "wrapper": "section#id",
         "settings": {
         }
       }
