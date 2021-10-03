@@ -284,20 +284,6 @@ Shopify.CountryProvinceSelector.prototype = {
   }
 };
 
-document.addEventListener('scroll', function(e) {
-  let bodyElement = document.querySelector('body');
-  let headerElement = document.querySelector('.header');
-  if (bodyElement.classList.contains("banner-page")) {
-    if (window.scrollY > 0.1) {
-      headerElement.classList.remove("transparent-header");
-    } else {
-      headerElement.classList.add("transparent-header");
-    }
-  }
-
-});
-
-
 class HeaderDrawer extends MenuDrawer {
   constructor() {
     super();

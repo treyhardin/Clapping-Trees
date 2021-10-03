@@ -1,4 +1,5 @@
 {
+  "name": "Homepage Sections",
   "sections": {
     "image_banner": {
       "type": "image-banner",

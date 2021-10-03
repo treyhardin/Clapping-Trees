@@ -82,8 +82,7 @@
 </svg>
 
 {% comment %} Mobile Menu {% endcomment %}
-
-<sticky-header class="header-wrapper">
+<sticky-header data-scroll-section data-scroll-sticky data-scroll-target="#header-scroll-target" class="header-wrapper">
   <header class="header page-width{% if section.settings.menu != blank %} header--has-menu{% endif %} {%- if request.page_type == 'index' -%} transparent-header{% endif %}">
     {%- if section.settings.menu != blank -%}
       <header-drawer data-breakpoint="tablet">

@@ -9,7 +9,7 @@
 
 {{ 'section-featured-blog.css' | asset_url | stylesheet_tag }}
 
-<div class="blog{% if section.settings.soft_background %} background-secondary{% endif %}{% if section.settings.heading == blank %} no-heading{% endif %}">
+<div data-scroll-section class="blog{% if section.settings.soft_background %} background-secondary{% endif %}{% if section.settings.heading == blank %} no-heading{% endif %}">
   <div class="page-width-desktop">
     <div class="title-wrapper-with-link{% if section.settings.heading == blank %} title-wrapper-with-link--no-heading{% endif %} title-wrapper--self-padded-tablet-down">
       <h2 class="blog__title">{{ section.settings.heading | escape }}</h2>

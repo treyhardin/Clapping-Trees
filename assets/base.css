@@ -1204,7 +1204,7 @@ deferred-media {
   align-items: center;
   box-sizing: border-box;
   font: inherit;
-  padding: 0.9rem 3rem 1.1rem;
+  padding: 0 30px;
   text-decoration: none;
   border: 0;
   border-radius: 0;
@@ -1212,10 +1212,11 @@ deferred-media {
   box-shadow: 0 0 0 0.1rem rgba(var(--color-button), var(--alpha-button-border));
   color: rgb(var(--color-button-text));
   min-width: 12rem;
-  min-height: 4.5rem;
+  height: 50px;
   transition: box-shadow var(--duration-short) ease;
   -webkit-appearance: none;
   appearance: none;
+  clip-path: polygon(10px 0, calc(100% - 10px) 0%, 100% 10px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0% calc(100% - 10px), 0% 10px);
 }
 
 .button:focus-visible {
@@ -1232,6 +1233,35 @@ deferred-media {
 
 .button:focus:not(:focus-visible) {
   box-shadow: 0 0 0 0.1rem rgba(var(--color-button), var(--alpha-button-border));
+}
+
+.button.button-arrow {
+  --button-icon-size: 22px;
+  padding: 0 calc(30px + var(--button-icon-size) + 10px) 0 30px;
+  position: relative;
+  color: inherit;
+}
+
+.button.button-arrow::after {
+  -webkit-mask: url(icon-arrow.svg) no-repeat 50% 50%;
+  mask: url(icon-arrow.svg) no-repeat 50% 50%;
+  -webkit-mask-size: fit;
+  mask-size: fit;
+  content: "";
+  background-color: currentColor;
+  position: absolute;
+  width: var(--button-icon-size);
+  height: var(--button-icon-size);
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: translateX(0px);
+  transition: transform var(--duration-default) ease-out;
+}
+
+.button.button-arrow:hover::after {
+  transform: translateX(5px);
 }
 
 .button,
@@ -1851,6 +1881,14 @@ input[type='checkbox'] {
   top: 0;
 }
 
+#header-scroll-target {
+    min-height: 100vh;
+    width: 100%;
+    /* display: block; */
+    position: sticky;
+    top: 10px;
+}
+
 /* Main Header Layout */
 .header-wrapper {
   display: block;
@@ -1865,8 +1903,8 @@ input[type='checkbox'] {
   align-items: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  position: sticky;
-  top: 0;
+  /* position: sticky; */
+  /* top: 0; */
   height: var(--header-height);
   background: var(--color-light);
   transition: all var(--duration-default) ease-out;

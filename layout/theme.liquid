@@ -31,6 +31,7 @@
 
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'locomotive-scroll.min.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'scroll.js' | asset_url }}" type="module" defer="defer"></script>
 
     {{ content_for_header }}
 
@@ -75,18 +76,17 @@
     <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
   </head>
 
-  <body class="{%- if request.page_type == 'index' -%}banner-page{% endif %}">
+  <body data-scroll-container class="{%- if request.page_type == 'index' -%}banner-page{% endif %}">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ "accessibility.skip_to_text" | t }}
     </a>
+    <div id="header-scroll-target"></div>
 
     {% section 'announcement-bar' %}
     {% section 'header' %}
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1" >
-      <div data-scroll-container>
         {{ content_for_layout }}
-      </div>
     </main>
 
     {% section 'footer' %}
@@ -123,19 +123,6 @@
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
     
-
-    {% comment %} <script src="{{ 'locomotive-scroll.min.js' | asset_url }}" defer="defer"></script> {% endcomment %}
-
-    {% comment %} <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script> {% endcomment %}
-
-    <script defer="defer">
-      // Locomotive Scroll
-
-      const scroll = new LocomotiveScroll({
-          el: document.querySelector('[data-scroll-container]'),
-          smooth: true
-      });
-    </script>
 
   </body>
 </html>
