@@ -1,5 +1,4 @@
 {
-  "name": "Homepage Sections",
   "sections": {
     "image_banner": {
       "type": "image-banner",
@@ -7,14 +6,21 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "medium"
+            "heading": "Modern Woodworking in Nashville",
+            "heading_size": "large"
+          }
+        },
+        "bb862e63-9a97-4040-ba4c-10072465fccc": {
+          "type": "text",
+          "settings": {
+            "text": "We handcraft the finest furniture, cookware, and home goods this side of the Mississippi.",
+            "text_size": "large"
           }
         },
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop all",
+            "button_label_1": "Shop Best Sellers",
             "button_link_1": "shopify:\/\/collections\/all",
             "button_style_secondary_1": false,
             "button_label_2": "",
@@ -25,16 +31,16 @@
       },
       "block_order": [
         "heading",
+        "bb862e63-9a97-4040-ba4c-10072465fccc",
         "button"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Hero_Desktop.jpg",
-        "image_2": "shopify:\/\/shop_images\/rack-of-womens-clothing.jpg",
         "adapt_height_first_image": false,
         "desktop_text_box_position": "flex-end",
-        "show_text_box": true,
+        "text_alignment": "left",
         "image_overlay_opacity": 0,
-        "color_scheme": "background-1",
+        "color_scheme": "light",
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
