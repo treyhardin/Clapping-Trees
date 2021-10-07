@@ -3,7 +3,7 @@ if (!Shopify.designMode) {
     const scroll = new LocomotiveScroll({
         el: document.querySelector('[data-scroll-container]'),
         smooth: true,
-        lerp: 0.3
+        lerp: 0.1
     });
     scroll.on('scroll', (instance) => {
         

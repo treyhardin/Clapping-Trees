@@ -515,6 +515,18 @@ blockquote {
   text-transform: uppercase;
 }
 
+.utility {
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+@media screen and (min-width: 750px) {
+  .utility {
+    font-size: 10px;
+  }
+}
+
 .caption-large,
 .customer .field input,
 .customer select,
@@ -538,12 +550,20 @@ blockquote {
   text-align: right;
 }
 
+.background-color-reverse {
+  color: var(--color-reverse);
+}
+
 .text-color-brand-1 {
   color: var(--color-brand-1);
 }
 
 .background-color-light {
   background-color: var(--color-light);
+}
+
+.background-color-reverse {
+  background-color: var(--color-reverse);
 }
 
 .color-foreground {
@@ -1230,12 +1250,12 @@ deferred-media {
   text-decoration: none;
   border: 0;
   border-radius: 0;
-  background-color: rgba(var(--color-button), var(--alpha-button-background));
-  box-shadow: 0 0 0 0.1rem rgba(var(--color-button), var(--alpha-button-border));
-  color: rgb(var(--color-button-text));
+  background-color: var(--color-ink);
+  box-shadow: 0 0 0 0.1rem rgba(var(--color-ink), var(--alpha-button-border));
+  color: rgb(var(--color-reverse));
   min-width: 12rem;
   height: 50px;
-  transition: box-shadow var(--duration-short) ease;
+  transition: box-shadow var(--duration-default) var(--easing);
   -webkit-appearance: none;
   appearance: none;
   clip-path: polygon(10px 0, calc(100% - 10px) 0%, 100% 10px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0% calc(100% - 10px), 0% 10px);
@@ -2337,14 +2357,11 @@ details-disclosure > details {
   border: 1px solid transparent;
   border-radius: 4rem;
   display: inline-block;
-  font-size: 1.2rem;
-  letter-spacing: 0.1rem;
   line-height: 1;
   padding: 0.6rem 1.3rem;
   text-align: center;
-  background-color: rgb(var(--color-badge-background));
-  border-color: rgba(var(--color-badge-border), var(--alpha-badge-border));
-  color: rgb(var(--color-foreground));
+  background-color: var(--color-brand-1);
+  color: var(--color-reverse);
   word-break: break-word;
 }
 
