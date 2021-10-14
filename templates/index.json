@@ -35,7 +35,7 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Hero_Desktop.jpg",
+        "image": "shopify:\/\/shop_images\/Hero_Desktop1.jpg",
         "adapt_height_first_image": false,
         "desktop_text_box_position": "flex-end",
         "text_alignment": "left",
@@ -58,15 +58,15 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "text_size": "h6"
           }
         },
         "button": {
           "type": "button",
           "settings": {
             "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
+            "button_link": ""
           }
         }
       },
@@ -76,8 +76,9 @@
         "button"
       ],
       "settings": {
-        "color_scheme": "background-1",
-        "full_width": true
+        "show_logo": true,
+        "full_width": true,
+        "text_alignment": "center"
       }
     },
     "featured_products": {
@@ -90,10 +91,7 @@
         "swipe_on_mobile": false,
         "image_ratio": "square",
         "show_secondary_image": false,
-        "add_image_padding": false,
-        "show_image_outline": true,
-        "show_vendor": false,
-        "show_rating": false
+        "show_vendor": false
       }
     },
     "video": {
