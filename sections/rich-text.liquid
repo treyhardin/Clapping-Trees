@@ -8,7 +8,9 @@
   <div class="rich-text background-color-light text-color-brand-1 text-align-{{ section.settings.text_alignment }} {% if section.settings.full_width %} rich-text--full-width{% endif %}">
     <div class="rich-text__blocks">
       {% if section.settings.show_logo %}
+        <div  data-scroll class="rte-logo">
         {% render 'logo-icon' %}
+        </div>
       {% endif %}
       {%- for block in section.blocks -%}
         {%- case block.type -%}
