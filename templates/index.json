@@ -51,14 +51,14 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand",
+            "heading": "\"Anything worth doing is worth doing right\"",
             "heading_size": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "text": "<p>– Andy Moore, Master Craftsman & Founder<\/p>",
             "text_size": "h6"
           }
         },
