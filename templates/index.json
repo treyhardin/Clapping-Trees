@@ -35,7 +35,7 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Hero_Desktop.jpg",
+        "image": "shopify:\/\/shop_images\/Hero_Desktop1.jpg",
         "adapt_height_first_image": false,
         "desktop_text_box_position": "flex-end",
         "text_alignment": "left",
@@ -51,22 +51,22 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand",
+            "heading": "\"Anything worth doing is worth doing right\"",
             "heading_size": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": "<p>– Andy Moore, Master Craftsman & Founder<\/p>",
+            "text_size": "h6"
           }
         },
         "button": {
           "type": "button",
           "settings": {
             "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
+            "button_link": ""
           }
         }
       },
@@ -76,8 +76,9 @@
         "button"
       ],
       "settings": {
-        "color_scheme": "background-1",
-        "full_width": true
+        "show_logo": true,
+        "full_width": true,
+        "text_alignment": "center"
       }
     },
     "featured_products": {
@@ -88,19 +89,16 @@
         "products_to_show": 4,
         "show_view_all": true,
         "swipe_on_mobile": false,
-        "image_ratio": "square",
+        "image_ratio": "adapt",
         "show_secondary_image": false,
-        "add_image_padding": false,
-        "show_image_outline": true,
-        "show_vendor": false,
-        "show_rating": false
+        "show_vendor": false
       }
     },
     "video": {
       "type": "video",
       "settings": {
         "heading": "Video",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=-qmN1xhXTnI&list=PLfc16E1k7ZQZjJ8zlMquHoZqH7yR6BcMt&index=7",
         "description": "",
         "full_width": false
       }
