@@ -44,4 +44,8 @@ if (!Shopify.designMode) {
 
 
     });
+
+    window.addEventListener('DOMContentLoaded', (event) => {
+        scroll.update();
+    });
 }
