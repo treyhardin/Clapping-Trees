@@ -68,42 +68,6 @@
         "full_width": false
       }
     },
-    "1634407534a7ea961d": {
-      "type": "collection-list",
-      "blocks": {
-        "1634407534a7ea961d-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "1634407534a7ea961d-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "1634407534a7ea961d-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "1634407534a7ea961d-0",
-        "1634407534a7ea961d-1",
-        "1634407534a7ea961d-2"
-      ],
-      "settings": {
-        "title": "Collections",
-        "image_ratio": "square",
-        "color_scheme": "background-1",
-        "swipe_on_mobile": false,
-        "image_padding": false,
-        "show_view_all": false
-      }
-    },
     "1634407561dac12153": {
       "type": "image-with-text",
       "blocks": {
@@ -138,6 +102,42 @@
         "height": "large",
         "color_scheme": "ink",
         "layout": "image_first"
+      }
+    },
+    "1634407534a7ea961d": {
+      "type": "collection-list",
+      "blocks": {
+        "1634407534a7ea961d-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "1634407534a7ea961d-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "1634407534a7ea961d-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "1634407534a7ea961d-0",
+        "1634407534a7ea961d-1",
+        "1634407534a7ea961d-2"
+      ],
+      "settings": {
+        "title": "Collections",
+        "image_ratio": "square",
+        "color_scheme": "background-1",
+        "swipe_on_mobile": false,
+        "image_padding": false,
+        "show_view_all": false
       }
     },
     "rich_text": {
@@ -181,8 +181,8 @@
     "image_banner",
     "featured_products",
     "video",
-    "1634407534a7ea961d",
     "1634407561dac12153",
+    "1634407534a7ea961d",
     "rich_text"
   ]
 }
