@@ -53,8 +53,19 @@
   z-index: 1;
 }
 
+.deferred-media__poster-button .play-button {
+  position: relative;
+}
+
+.deferred-media__poster-button .play-button_text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
 .deferred-media__poster-button:hover {
-  transform: translate(-50%, -50%) scale(1.1);
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .deferred-media__poster-button .icon {
