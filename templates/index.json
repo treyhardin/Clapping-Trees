@@ -110,19 +110,19 @@
         "1634407534a7ea961d-0": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "stools"
           }
         },
         "1634407534a7ea961d-1": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "cookware"
           }
         },
         "1634407534a7ea961d-2": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "cutting-boards"
           }
         }
       },
@@ -132,8 +132,8 @@
         "1634407534a7ea961d-2"
       ],
       "settings": {
-        "title": "Collections",
-        "image_ratio": "square",
+        "title": "A lil' something for everyone",
+        "image_ratio": "adapt",
         "color_scheme": "background-1",
         "swipe_on_mobile": false,
         "image_padding": false,
