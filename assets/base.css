@@ -82,29 +82,24 @@ body {
 }
 
 :root,
-.color-background-1 {
-  --color-foreground: var(--color-base-text);
-  --color-background: var(--color-base-background-1);
+.color-scheme-reverse {
+  --color-foreground: var(--color-ink);
+  --color-background: var(--color-reverse);
 }
 
-.color-background-2 {
-  --color-background: var(--color-base-background-2);
+.color-scheme-light {
+  --color-foreground: var(--color-ink);
+  --color-background: var(--color-light);
 }
 
-.color-inverse {
-  --color-foreground: var(--color-base-background-1);
-  --color-background: var(--color-base-text);
+.color-scheme-ink {
+  --color-foreground: var(--color-reverse);
+  --color-background: var(--color-ink);
 }
 
-.color-accent-1 {
-  --color-foreground: var(--color-base-solid-button-labels);
-  --color-background: var(--color-base-accent-1);
-}
-
-.color-accent-2 {
-  --color-foreground: var(--color-base-solid-button-labels);
-  --color-background: var(--color-base-accent-2);
-  --gradient-background: var(--gradient-base-accent-2);
+.color-scheme-brand-1 {
+  --color-foreground: var(--color-ink);
+  --color-background: var(--color-brand-1);
 }
 
 .color-foreground-outline-button {
@@ -1293,7 +1288,16 @@ deferred-media {
   position: relative;
 }
 
-.button.button-arrow::after {
+.button.link-arrow {
+  --button-icon-size: 22px;
+  padding: 0 calc(30px + var(--button-icon-size) + 10px) 0 0px;
+  position: relative;
+  background-color: none;
+
+}
+
+.button.button-arrow::after,
+.button.link-arrow::after {
   -webkit-mask: url(icon-arrow.svg) no-repeat 50% 50%;
   mask: url(icon-arrow.svg) no-repeat 50% 50%;
   -webkit-mask-size: fit;
@@ -1311,7 +1315,8 @@ deferred-media {
   transition: transform var(--duration-default) ease-out;
 }
 
-.button.button-arrow:hover::after {
+.button.button-arrow:hover::after,
+.button.link-arrow:hover::after {
   transform: translateX(5px);
 }
 
