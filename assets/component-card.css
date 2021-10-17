@@ -73,6 +73,11 @@
   padding: 3rem;
 }
 
+.card__text.card__text-overlay {
+  position: absolute;
+  bottom: 0;
+}
+
 .card-colored.color-background-1 {
   background-color: rgba(var(--color-foreground), 0.04);
 }
@@ -179,6 +184,7 @@
   right: 0;
   padding: 10px;
   box-sizing: border-box;
+  color: var(--color-ink);
 }
 
 .card-information__wrapper > * {

@@ -157,12 +157,10 @@
 .footer-block__heading {
   margin-bottom: 2rem;
   margin-top: 0;
-  font-size: 1.6rem;
 }
 
 @media screen and (min-width: 990px) {
   .footer-block__heading {
-    font-size: 1.8rem;
   }
 }
 
@@ -382,7 +380,7 @@ noscript .localization-selector.link {
   }
 }
 
-/* .footer__copyright a {
+.footer__copyright a {
   font-size: 1.3rem;
   text-decoration: none;
   color: currentColor;
@@ -390,7 +388,7 @@ noscript .localization-selector.link {
 
 .footer__copyright a:hover {
   opacity: 0.75;
-} */
+}
 
 @keyframes appear-down {
   0% {

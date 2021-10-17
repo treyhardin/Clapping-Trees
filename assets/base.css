@@ -85,21 +85,29 @@ body {
 .color-scheme-reverse {
   --color-foreground: var(--color-ink);
   --color-background: var(--color-reverse);
+  background-color: var(--color-background);
+  color: var(--color-foreground);
 }
 
 .color-scheme-light {
   --color-foreground: var(--color-ink);
   --color-background: var(--color-light);
+  background-color: var(--color-background);
+  color: var(--color-foreground);
 }
 
 .color-scheme-ink {
   --color-foreground: var(--color-reverse);
   --color-background: var(--color-ink);
+  background-color: var(--color-background);
+  color: var(--color-foreground);
 }
 
 .color-scheme-brand-1 {
   --color-foreground: var(--color-ink);
   --color-background: var(--color-brand-1);
+  background-color: var(--color-background);
+  color: var(--color-foreground);
 }
 
 .color-foreground-outline-button {
@@ -316,6 +324,16 @@ html.no-js .no-js-hidden {
   margin-bottom: 0;
 }
 
+.flush-section {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.flush-section.padded-section > .page-width {
+  padding-top: var(--space-l);
+  padding-bottom: var(--space-l);
+}
+
 .background-secondary {
   background-color: rgba(var(--color-foreground), 0.04);
   padding: 4rem 0 5rem;
@@ -455,8 +473,7 @@ h3,
 
 h4,
 .h4 {
-  font-size: 1.5rem;
-  line-height: .95;
+  font-size: 28px;
   margin-bottom: var(--space-xs);
 }
 
@@ -477,7 +494,8 @@ h5,
 h6,
 .h6 {
   font-size: 24px;
-  line-height: .95;
+  line-height: 1.2;
+  font-variation-settings: 'wght' 400;
   margin-bottom: var(--space-xs);
 }
 
@@ -904,7 +922,7 @@ summary::-webkit-details-marker {
 /* component-title */
 .title,
 .title-wrapper-with-link {
-  margin: 3rem 0 2rem;
+  /* margin: 3rem 0 2rem; */
 }
 
 .title-wrapper-with-link .title {
@@ -912,7 +930,7 @@ summary::-webkit-details-marker {
 }
 
 .title-wrapper {
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
 }
 
 .title-wrapper-with-link {
@@ -920,7 +938,7 @@ summary::-webkit-details-marker {
   justify-content: space-between;
   align-items: flex-end;
   gap: 1rem;
-  margin: 4rem 0 3rem;
+  margin: 0 0 3rem;
   flex-wrap: wrap;
 }
 
@@ -944,7 +962,7 @@ summary::-webkit-details-marker {
 @media screen and (min-width: 990px) {
   .title,
   .title-wrapper-with-link {
-    margin: 5rem 0 3rem;
+    /* margin: 5rem 0 3rem; */
   }
 
   .title--primary {
@@ -1389,6 +1407,10 @@ deferred-media {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.image-frame {
+  clip-path: polygon(10px 0, calc(100% - 10px) 0%, 100% 10px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0% calc(100% - 10px), 0% 10px);
 }
 
 /* Button - social share */

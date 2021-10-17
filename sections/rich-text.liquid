@@ -6,7 +6,7 @@
 
 <div data-scroll-section class="{% unless section.settings.full_width %}page-width{% endunless %}">
   <div class="rich-text background-color-light text-color-brand-1 text-align-{{ section.settings.text_alignment }} {% if section.settings.full_width %} rich-text--full-width{% endif %}">
-    <div class="rich-text__blocks">
+    <div data-scroll data-scroll-speed="1" data-scroll-delay=".5" class="rich-text__blocks">
       {% if section.settings.show_logo %}
         <div>
         {% render 'logo-icon' %}
@@ -32,7 +32,7 @@
 {
   "name": "t:sections.rich-text.name",
   "tag": "section",
-  "class": "spaced-section spaced-section--full-width",
+  "class": "flush-section",
   "settings": [
     {
       "type": "checkbox",

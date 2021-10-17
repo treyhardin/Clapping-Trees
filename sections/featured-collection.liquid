@@ -16,7 +16,7 @@
     assign more_in_collection = true
   endif
 -%}
-<div data-scroll-section class="collection page-width{% if section.settings.swipe_on_mobile == true and section.settings.collection.all_products_count > 2 and section.settings.products_to_show > 2 %} page-width-desktop{% endif %}">
+<div data-scroll-section class="collection page-width{% if section.settings.swipe_on_mobile == true and section.settings.collection.all_products_count > 2 and section.settings.products_to_show > 2 %} page-width-desktop{% endif %} color-scheme-{{ section.settings.color_scheme }}">
   <div class="title-wrapper-with-link{% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %}{% if section.settings.collection.all_products_count > 2 and section.settings.swipe_on_mobile and section.settings.products_to_show > 2 %} title-wrapper--self-padded-tablet-down{% endif %}">
     <h6 class="title{% if section.settings.title == blank %} title--no-heading{% endif %}">{{ section.settings.title | escape }}</h6>
 
@@ -64,7 +64,7 @@
 {
   "name": "t:sections.featured-collection.name",
   "tag": "section",
-  "class": "spaced-section",
+  "class": "flush-section padded-section",
   "settings": [
     {
       "type": "text",
@@ -133,6 +133,30 @@
       "id": "show_vendor",
       "default": false,
       "label": "t:sections.featured-collection.settings.show_vendor.label"
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        {
+          "value": "reverse",
+          "label": "Reverse"
+        },
+        {
+          "value": "light",
+          "label": "Light"
+        },
+        {
+          "value": "ink",
+          "label": "Ink"
+        },
+        {
+          "value": "brand-1",
+          "label": "Brand 1"
+        }
+      ],
+      "default": "ink",
+      "label": "Color Scheme"
     }
   ],
   "presets": [
