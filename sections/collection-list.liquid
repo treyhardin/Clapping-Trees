@@ -28,7 +28,7 @@
       -%}
 
       {%- for block in section.blocks -%}
-        <li data-scroll data-scroll-speed="1" data-scroll-delay="0.{% increment count | plus: 100 %}" class="collection-list__item grid__item {% if section.settings.swipe_on_mobile %} slider__slide{% endif %}" {{ block.shopify_attributes }}>
+        <li data-scroll data-scroll-speed="1" data-scroll-delay="0.{% increment renamed_variable_count_20__7c__20_plus_3a__20_100 %}" class="collection-list__item grid__item {% if section.settings.swipe_on_mobile %} slider__slide{% endif %}" {{ block.shopify_attributes }}>
           <a{% if block.settings.collection != blank and block.settings.collection.all_products_count > 0 %} href="{{ block.settings.collection.url }}"{% endif %}
             class="card animate-arrow link{% if block.settings.collection.featured_image != blank %} card--media{% else %}{% if section.settings.image_ratio != 'adapt' %} card--stretch{% endif %}{% endif %}{% unless section.settings.image_padding %} card--light-border{% endunless %}"
           >
@@ -240,3 +240,13 @@
   ]
 }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% increment count | plus: 100 %}"
+  to: "{% increment renamed_variable_count_20__7c__20_plus_3a__20_100 %}"
+  position: 2074..2139
+{% endcomment %}
